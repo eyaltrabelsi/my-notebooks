@@ -1,0 +1,4 @@
+fasttext
+numpy
+gensim
+tqdm
