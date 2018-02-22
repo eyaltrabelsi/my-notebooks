@@ -1,7 +1,6 @@
-# my notebooks
-[![Binder](http://mybinder.org/badge.svg)](http://mybinder.org:/repo/eyaltrabelsi/my-notebooks)
+# toturials
 
-This Repository hold my notebooks partition by:
-  - data exploration
-  - tutorials
-  - nlp playground
+This Repository hold tutorials and links of good resources in specific domains:
+  - git references to understand basic git 
+  - python references to understand python
+  - docker references to understand basic git 
