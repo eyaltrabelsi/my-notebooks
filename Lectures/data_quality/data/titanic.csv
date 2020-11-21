@@ -1,0 +1,58 @@
+,PassengerId,Survived,Pclass,Name,Sex,Age,SibSp,Parch,Ticket,Fare,Cabin,Embarked
+0,100,0,2,"Kantor, Mr. Sinai",male,34.0,1,0,244367,26.0,,S
+1,101,0,3,"Petranec, Miss. Matilda",female,28.0,0,0,349245,7.8958,,S
+2,102,0,3,"Petroff, Mr. Pastcho (""Pentcho"")",male,,0,0,349215,7.8958,,S
+3,103,0,1,"White, Mr. Richard Frasar",male,21.0,0,1,35281,77.2875,D26,S
+4,104,0,3,"Johansson, Mr. Gustaf Joel",male,33.0,0,0,7540,8.6542,,S
+5,105,0,3,"Gustafsson, Mr. Anders Vilhelm",male,37.0,2,0,3101276,7.925,,S
+6,106,0,3,"Mionoff, Mr. Stoytcho",male,28.0,0,0,349207,7.8958,,S
+7,107,1,3,"Salkjelsvik, Miss. Anna Kristine",female,21.0,0,0,343120,7.65,,S
+8,108,1,3,"Moss, Mr. Albert Johan",male,,0,0,312991,7.775,,S
+9,109,0,3,"Rekic, Mr. Tido",male,38.0,0,0,349249,7.8958,,S
+10,110,1,3,"Moran, Miss. Bertha",female,,1,0,371110,24.15,,Q
+11,111,0,1,"Porter, Mr. Walter Chamberlain",male,47.0,0,0,110465,52.0,C110,S
+12,112,0,3,"Zabour, Miss. Hileni",female,14.5,1,0,2665,14.4542,,C
+13,113,0,3,"Barton, Mr. David John",male,22.0,0,0,324669,8.05,,S
+14,114,0,3,"Jussila, Miss. Katriina",female,20.0,1,0,4136,9.825,,S
+15,115,0,3,"Attalah, Miss. Malake",female,17.0,0,0,2627,14.4583,,C
+16,116,0,3,"Pekoniemi, Mr. Edvard",male,21.0,0,0,STON/O 2. 3101294,7.925,,S
+17,117,0,3,"Connors, Mr. Patrick",male,70.5,0,0,370369,7.75,,Q
+18,118,0,2,"Turpin, Mr. William John Robert",male,29.0,1,0,11668,21.0,,S
+19,119,0,1,"Baxter, Mr. Quigg Edmond",male,24.0,0,1,PC 17558,247.5208,B58 B60,C
+20,120,0,3,"Andersson, Miss. Ellis Anna Maria",female,2.0,4,2,347082,31.275,,S
+21,121,0,2,"Hickman, Mr. Stanley George",male,21.0,2,0,S.O.C. 14879,73.5,,S
+22,122,0,3,"Moore, Mr. Leonard Charles",male,,0,0,A4. 54510,8.05,,S
+23,123,0,2,"Nasser, Mr. Nicholas",male,32.5,1,0,237736,30.0708,,C
+24,124,1,2,"Webber, Miss. Susan",female,32.5,0,0,27267,13.0,E101,S
+25,125,0,1,"White, Mr. Percival Wayland",male,54.0,0,1,35281,77.2875,D26,S
+26,126,1,3,"Nicola-Yarred, Master. Elias",male,12.0,1,0,2651,11.2417,,C
+27,127,0,3,"McMahon, Mr. Martin",male,,0,0,370372,7.75,,Q
+28,128,1,3,"Madsen, Mr. Fridtjof Arne",male,24.0,0,0,C 17369,7.1417,,S
+29,129,1,3,"Peter, Miss. Anna",female,,1,1,2668,22.3583,F E69,C
+30,130,0,3,"Ekstrom, Mr. Johan",male,45.0,0,0,347061,6.975,,S
+31,131,0,3,"Drazenoic, Mr. Jozef",male,33.0,0,0,349241,7.8958,,C
+32,132,0,3,"Coelho, Mr. Domingos Fernandeo",male,20.0,0,0,SOTON/O.Q. 3101307,7.05,,S
+33,133,0,3,"Robins, Mrs. Alexander A (Grace Charity Laury)",female,47.0,1,0,A/5. 3337,14.5,,S
+34,134,1,2,"Weisz, Mrs. Leopold (Mathilde Francoise Pede)",female,29.0,1,0,228414,26.0,,S
+35,135,0,2,"Sobey, Mr. Samuel James Hayden",male,25.0,0,0,C.A. 29178,13.0,,S
+36,136,0,2,"Richard, Mr. Emile",male,23.0,0,0,SC/PARIS 2133,15.0458,,C
+37,137,1,1,"Newsom, Miss. Helen Monypeny",female,19.0,0,2,11752,26.2833,D47,S
+38,138,0,1,"Futrelle, Mr. Jacques Heath",male,37.0,1,0,113803,53.1,C123,S
+39,139,0,3,"Osen, Mr. Olaf Elon",male,16.0,0,0,7534,9.2167,,S
+40,140,0,1,"Giglio, Mr. Victor",male,24.0,0,0,PC 17593,79.2,B86,C
+41,141,0,3,"Boulos, Mrs. Joseph (Sultana)",female,,0,2,2678,15.2458,,C
+42,142,1,3,"Nysten, Miss. Anna Sofia",female,22.0,0,0,347081,7.75,,S
+43,143,1,3,"Hakkarainen, Mrs. Pekka Pietari (Elin Matilda Dolck)",female,24.0,1,0,STON/O2. 3101279,15.85,,S
+44,144,0,3,"Burke, Mr. Jeremiah",male,19.0,0,0,365222,6.75,,Q
+45,145,0,2,"Andrew, Mr. Edgardo Samuel",male,18.0,0,0,231945,11.5,,S
+46,146,0,2,"Nicholls, Mr. Joseph Charles",male,19.0,1,1,C.A. 33112,36.75,,S
+47,147,1,3,"Andersson, Mr. August Edvard (""Wennerstrom"")",male,27.0,0,0,350043,7.7958,,S
+48,148,0,3,"Ford, Miss. Robina Maggie ""Ruby""",female,9.0,2,2,W./C. 6608,34.375,,S
+49,149,0,2,"Navratil, Mr. Michel (""Louis M Hoffman"")",male,36.5,0,2,230080,26.0,F2,S
+50,150,0,2,"Byles, Rev. Thomas Roussel Davids",male,42.0,0,0,244310,13.0,,S
+51,151,0,2,"Bateman, Rev. Robert James",male,51.0,0,0,S.O.P. 1166,12.525,,S
+52,152,1,1,"Pears, Mrs. Thomas (Edith Wearne)",female,22.0,1,0,113776,66.6,C2,S
+53,153,0,3,"Meo, Mr. Alfonzo",male,55.5,0,0,A.5. 11206,8.05,,S
+54,154,0,3,"van Billiard, Mr. Austin Blyler",male,40.5,0,2,A/5. 851,14.5,,S
+55,155,0,3,"Olsen, Mr. Ole Martin",male,,0,0,Fa 265302,7.3125,,S
+56,156,0,1,"Williams, Mr. Charles Duane",male,51.0,0,1,PC 17597,61.3792,,C
