@@ -1,0 +1,30 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \
+\
+	ML infrastructure test\
+	Training the ML models should be reproducible, which means that training the ML model on the same data should produce identical ML models.\
+	Diff-testing of ML models relies on deterministic training, which is hard to achieve due to non-convexity of the ML algorithms, random seed 		generation, or distributed ML model training.\
+	Action: determine the non-deterministic parts in the model training code base and try to minimize non-determinism.\
+	- Test ML API usage. Stress testing.\
+		- Action: Unit tests to randomly generate input data and training the model for a single optimization step (e.g gradient descent).\
+		- Action: Crash tests for model training. The ML model should restore from a checkpoint after a mid-training crash.\
+	- Test the algorithmic correctness.\
+		- Action: Unit test that it is not intended to completing the ML model training but to train for a few iterations and ensure that loss decreases while training.\
+		- Avoid: Diff-testing with previously build ML models because such tests are hard to maintain.\
+	- Integration testing: The full ML pipeline should be integration tested.\
+		- Action: Create a fully automated test that regularly triggers the entire ML pipeline. The test should validate that the data and code successfully finish each stage of training and the resulting ML model performs as expected.\
+		- All integration tests should be run before the ML model reaches the production environment.\
+	- Validating the ML model before serving it.\
+		- Action: Setting a threshold and testing for slow degradation in model quality over many versions on a validation set.\
+		- Action: Setting a threshold and testing for sudden performance drops in a new version of the ML model.\
+	- ML models are canaried before serving.\
+		- Action: Testing that an ML model successfully loads into production serving and the prediction on real-life data is generated as expected.\
+		- Testing that the model in the training environment gives the same score as the model in the serving environment.\
+		- Action: The difference between the performance on the holdout data and the \'93next\'adday\'94 data. Some difference will always exist. Pay attention to large differences in performance between holdout and \'93next\'adday\'94 data because it may indicate that some time-sensitive features cause ML model degradation.\
+		- Action: Avoid result differences between training and serving environments. Applying a model to an example in the training data and the same example at serving should result in the same prediction. A difference here indicates an engineering error.}
