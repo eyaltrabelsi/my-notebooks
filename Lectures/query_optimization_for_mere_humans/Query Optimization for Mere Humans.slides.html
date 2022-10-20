@@ -14130,69 +14130,66 @@ div.jp-OutputPrompt {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><br></p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <ul>
-<li>Query execution overview.</li>
-<li>Let's explain Explain.</li>
+<li>Problem Overview.</li>
+<li>Execution Plans.</li>
 <li>2 Fake Examples.</li>
-<li>Are there easier ways?</li>
+<li>Can database interaction be better?</li>
 </ul>
 
 </div>
 </div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Query-Execution-Flow-%F0%9F%AA%9C">Query Execution Flow &#129692;<a class="anchor-link" href="#Query-Execution-Flow-%F0%9F%AA%9C">&#182;</a></h1>
+<h1 id="Identify-flaws-in-queries-is-tough%F0%9F%A9%BA">Identify flaws in queries is tough&#129658;<a class="anchor-link" href="#Identify-flaws-in-queries-is-tough%F0%9F%A9%BA">&#182;</a></h1>
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+
 </div>
 </div><div class="fragment">
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><br></p>
-<p><img src="https://www.interdb.jp/pg/img/fig-3-01.png" width="400" height="600"></p>
-
-</div>
-</div></div><div class="fragment">
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>We want to reduce mental capacity !!</strong> - <a href="https://www.interdb.jp/pg/pgsql03.html">but if you want to go the extra mile</a>.</p>
+<ul>
+<li>Its require skill to write sql queries without error.</li>
+<li>Its require skill to optimize sql queries.</li>
+<li>Databases provide execution plans</li>
+</ul>
 
 </div>
 </div></div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Identify-flaws-in-databases-is-tough%F0%9F%A9%BA">Identify flaws in databases is tough&#129658;<a class="anchor-link" href="#Identify-flaws-in-databases-is-tough%F0%9F%A9%BA">&#182;</a></h1>
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><br></p>
-<ul>
-<li>Its require skill to optimize sql queries.</li>
-<li>Its require skill to write sql queries without error.</li>
-<li>Unfortunately (very opnionated):<ul>
-<li>No good enough profilers.</li>
-<li>No good enough debuggers.</li>
-<li>Most tool are theoretical and led by the academy. </li>
-</ul>
-</li>
-</ul>
-
+<h1 id="Query-Execution-Flow-%F0%9F%AA%9C">Query Execution Flow &#129692;<a class="anchor-link" href="#Query-Execution-Flow-%F0%9F%AA%9C">&#182;</a></h1>
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 
 </div>
-</div><div class="fragment">
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><img src="execution_flow.png" width="400" height="600"></p>
+
+</div>
+</div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <ul>
+<li><strong>My opinion</strong> still a way to go in terms of toolings.</li>
 <li>We are stuck with <strong>execution plans</strong>.</li>
-<li><strong>Buzzword alert !!</strong> we should democretized identify flaws in databases.</li>
+<li><strong>Buzzword alert !!</strong> we should democretized execution plans.</li>
 </ul>
 
 </div>
-</div></div></section></section><section><section>
+</div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="Let's-explain-Explain-%F0%9F%93%9C">Let's explain Explain &#128220;<a class="anchor-link" href="#Let's-explain-Explain-%F0%9F%93%9C">&#182;</a></h1>
@@ -14200,20 +14197,23 @@ div.jp-OutputPrompt {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><br></p>
-<ul>
-<li><strong>explain</strong>: show what the planner planned to do.</li>
-<li><strong>explain analyze</strong>: what the planner plans to do, <strong>executes the query</strong> and also shows how it did it.</li>
-</ul>
 
 </div>
 </div><div class="fragment">
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<ul>
-<li>Include options such as format, verbose, buffers, and cost.</li>
-<li>Similar across databases.</li>
-</ul>
+<div class="highlight"><pre><span></span><span class="k">EXPLAIN</span> <span class="err">[</span> <span class="p">(</span> <span class="k">option</span> <span class="err">[</span><span class="p">,</span> <span class="p">...</span><span class="err">]</span> <span class="p">)</span> <span class="err">]</span> <span class="n">statement</span>
+</pre></div>
+<div class="highlight"><pre><span></span><span class="o">-</span> <span class="k">ANALYZE</span> <span class="p">[</span> <span class="nb">boolean</span> <span class="p">]</span>
+<span class="o">-</span> <span class="k">VERBOSE</span> <span class="p">[</span> <span class="nb">boolean</span> <span class="p">]</span>
+<span class="o">-</span> <span class="n">COSTS</span> <span class="p">[</span> <span class="nb">boolean</span> <span class="p">]</span>
+<span class="o">-</span> <span class="n">SETTINGS</span> <span class="p">[</span> <span class="nb">boolean</span> <span class="p">]</span>
+<span class="o">-</span> <span class="n">BUFFERS</span> <span class="p">[</span> <span class="nb">boolean</span> <span class="p">]</span>
+<span class="o">-</span> <span class="n">WAL</span> <span class="p">[</span> <span class="nb">boolean</span> <span class="p">]</span>
+<span class="o">-</span> <span class="n">TIMING</span> <span class="p">[</span> <span class="nb">boolean</span> <span class="p">]</span>
+<span class="o">-</span> <span class="n">SUMMARY</span> <span class="p">[</span> <span class="nb">boolean</span> <span class="p">]</span>
+<span class="o">-</span> <span class="n">FORMAT</span> <span class="err">{</span> <span class="nb">TEXT</span> <span class="o">|</span> <span class="n">XML</span> <span class="o">|</span> <span class="n">JSON</span> <span class="o">|</span> <span class="n">YAML</span> <span class="err">}</span>
+</pre></div>
 
 </div>
 </div>
@@ -14225,64 +14225,66 @@ div.jp-OutputPrompt {
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <ul>
-<li><strong>Pro Tip</strong>💃: go over an execution plan at least once.</li>
+<li><strong>Pro Tip</strong>💃: go over an execution plan at least once; similar across databases.</li>
+<li><strong>Pro Tip</strong>💃: prefer EXPLAIN ANALYZE as it holds more information.</li>
 </ul>
 
 </div>
 </div></div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Why-shouldn't-I-always-use-explain-analyze?">Why shouldn't I always use explain analyze?<a class="anchor-link" href="#Why-shouldn't-I-always-use-explain-analyze?">&#182;</a></h1>
+<h1 id="Why-shouldn't-I-always-use-explain-analyze?-%F0%9F%98%B5%E2%80%8D%F0%9F%92%AB">Why shouldn't I always use explain analyze? &#128565;&#8205;&#128171;<a class="anchor-link" href="#Why-shouldn't-I-always-use-explain-analyze?-%F0%9F%98%B5%E2%80%8D%F0%9F%92%AB">&#182;</a></h1>
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<ul>
-<li>When resources are scarce:<ul>
-<li>The query never finishes.</li>
-<li>Monitoring production.</li>
-</ul>
-</li>
-<li>Destructive operations.</li>
-<li>When you don't need actual stats:<ul>
-<li>Checking index usage.</li>
-<li>Checking partition scans.</li>
-<li>Checking query compilation*.</li>
-</ul>
-</li>
-</ul>
-
-</div>
-</div></section><section>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<div class="highlight"><pre><span></span><span class="k">EXPLAIN</span> <span class="k">ANALYZE</span>
-<span class="k">SELECT</span> <span class="n">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">users</span> <span class="k">WHERE</span> <span class="n">twitter</span> <span class="o">!=</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>
-</pre></div>
 
 </div>
 </div><div class="fragment">
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
+<li>Destructive operations.</li>
+<li>When resources are scarce:<ul>
+<li>The query never finishes.</li>
+<li>Monitoring production.</li>
+</ul>
+</li>
+<li>When you don't need actual stats:<ul>
+<li>Checking index usage.</li>
+<li>Checking partition scans.</li>
+</ul>
+</li>
+<li>When checking query compilation.</li>
+</ul>
 
+</div>
+</div></div></section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="Explain-Anatomy%F0%9F%AB%80">Explain Anatomy&#129728;<a class="anchor-link" href="#Explain-Anatomy%F0%9F%AB%80">&#182;</a></h1>
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+
+</div>
+</div><div class="fragment">
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<div class="highlight"><pre><span></span><span class="k">EXPLAIN</span> <span class="k">ANALYZE</span>
+<span class="k">SELECT</span> <span class="n">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">users</span> <span class="k">WHERE</span> <span class="n">twitter</span> <span class="o">!=</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>
+</pre></div>
 <p><img src="basic_execution_plan.png" alt=""></p>
-
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 
 </div>
 </div></div><div class="fragment">
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <ul>
-<li>It's longer than our query :(.</li>
-<li>Real-world execution plans are overwhelming.</li>
+<li>Look crypted at first :( . </li>
+<li>It's longer than our query :(( .</li>
+<li>Real-world execution plans are overwhelming if you dont focus :(( . </li>
 </ul>
 
 </div>
@@ -14292,18 +14294,12 @@ div.jp-OutputPrompt {
 <p><img src="basic_execution_plan_high_level_stats.png" alt=""></p>
 
 </div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-
-</div>
 </div><div class="fragment">
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <ul>
-<li>Finding the best execution plan is NP-hard.</li>
-<li>We may not get the optimal execution plan.</li>
-<li>The planning time may be longer than the execution time. </li>
+<li>Query execution took 1.27 seconds.</li>
+<li>Query planning took 0.4 millis.</li>
 </ul>
 
 </div>
@@ -14313,17 +14309,12 @@ div.jp-OutputPrompt {
 <p><img src="node_details_execution_plan.png" alt=""></p>
 
 </div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-
-</div>
 </div><div class="fragment">
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <ul>
-<li>Top run after the bottom.</li>
-<li><strong>Many operations</strong>: 'Seq Scan', 'Values Scan', 'Sample Scan', 'Function Scan', 'CTEScan', 'Index Scan', 'Bitmap Heap Scan', 'Bitmap Index Scan', 'Index Only Scan','Hash Join','Nested Loop', 'Merge Join', 'Hash', 'Gather', 'Gather Merge','Unique','Result', 'SetOp', 'Subquery Scan','GroupAggregate','Aggregate', 'HashAggregate', 'WindowAgg', 'Limit', 'Sort', 'materialize', 'LockRows', 'Append', 'Merge Append' etc.</li>
+<li>Structured as inverse tree.</li>
+<li><strong>Many operations</strong>: 'Seq Scan', 'Values Scan', 'Sample Scan', 'Function Scan', 'CTEScan', 'Index Scan', 'Bitmap Heap Scan', 'Bitmap Index Scan', 'Index Only Scan','Subquery Scan', 'Hash Join','Nested Loop', 'Merge Join', 'Hash', 'Gather', 'Gather Merge','Unique','Result', 'SetOp', 'GroupAggregate','Aggregate', 'HashAggregate', 'WindowAgg', 'Limit', 'Sort', 'materialize', 'LockRows', 'Append', 'Merge Append' etc.</li>
 </ul>
 
 </div>
@@ -14337,6 +14328,7 @@ div.jp-OutputPrompt {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <ul>
 <li><strong>Pro Tip</strong>💃: Cheat on your homework with <a href="https://www.pgmustard.com/docs/explain">explain glossary</a>.</li>
+<li><strong>Pro Tip</strong>💃: Focus is key.</li>
 </ul>
 
 </div>
@@ -14346,39 +14338,88 @@ div.jp-OutputPrompt {
 <p><img src="node_metrics_execution_plan.png" alt=""></p>
 
 </div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-
-</div>
 </div><div class="fragment">
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <ul>
-<li><strong>Startup Cost</strong>: arbirary units that represent estimated time to return the first row (aggregated).</li>
-<li><strong>Total Cost</strong>: arbirary units that represent estimated time to return all the rows (aggregated). </li>
-<li><strong>Plan Rows</strong>: the estimated number of produced rows.</li>
-<li><strong>Plan Width</strong>: the estimated average size of rows in bytes.</li>
-<li><strong>Actual Startup Time</strong>: the time it took to return the first row in milliseconds (aggregated). </li>
-<li><strong>Actual Total Time</strong>: the time it took to return all the rows in milliseconds (per-loop average and aggregated).</li>
-<li><strong>Actual Rows</strong>: the actual number of produced rows (per-loop average).</li>
-<li><strong>Actual Loops</strong>: the number of loops the same node was executed.</li>
+<li><strong>Plan Rows</strong>: the estimated number of produced rows of Aggregate node is 1.</li>
+<li><strong>Actual Rows</strong>: the actual number of produced rows of Aggregate node is 1 (per-loop average).</li>
+<li><strong>Plan Width</strong>: the estimated average size of rows of Aggregate node is 8 bytes.</li>
+<li>the estimated number of rows cam be off depending on statistics.</li>
 </ul>
 
 </div>
 </div></div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><img src="node_metrics_execution_plan.png" alt=""></p>
+
+</div>
+</div><div class="fragment">
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <ul>
-<li><strong>Pro Tip</strong>💃: Focus on what matter.</li>
-<li><strong>Pro Tip</strong>💃: loops are confusing.</li>
+<li><strong>Startup Cost</strong>: arbirary units that represent estimated time to return the first row of Aggregate node is 845110(aggregated).</li>
+<li><strong>Total Cost</strong>: arbirary units that represent estimated time to return all the rows  of Aggregate node is 845110 (aggregated). </li>
+<li><strong>Actual Startup Time</strong>: the time it took to return the first row in ms  of Aggregate node is 1271.157 (aggregated). </li>
+<li><strong>Actual Total Time</strong>: the time it took to return all the rows in ms of Aggregate node is 1271.158 (per-loop average and aggregated).</li>
 </ul>
 
 </div>
-</div></section><section>
+</div></div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="When-explain-will-work?-%F0%9F%A4%94">When explain will work? &#129300;<a class="anchor-link" href="#When-explain-will-work?-%F0%9F%A4%94">&#182;</a></h1>
+<p><img src="node_metrics_execution_plan.png" alt=""></p>
+
+</div>
+</div><div class="fragment">
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
+<li><strong>Actual Loops</strong>: the number of loops the same node was executed is 1.</li>
+<li>To make the numbers comparable with the way the cost estimates are shown.</li>
+<li>To get the total time and rows, the actual time and rows need to be multiplied by loops values.</li>
+</ul>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+
+</div>
+</div></div><div class="fragment">
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
+<li><strong>Pro Tip</strong>💃: be wary of loops.</li>
+</ul>
+
+</div>
+</div></div></section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><img src="basic_execution_plan_high_level_stats.png" alt=""></p>
+
+</div>
+</div><div class="fragment">
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
+<li>We may not get the optimal execution plan.</li>
+<li>Finding the best execution plan is NP-hard.</li>
+<li>The planning time may be longer than the execution time. </li>
+</ul>
+
+</div>
+</div></div></section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="When-explain-will-work?%F0%9F%A4%94">When explain will work?&#129300;<a class="anchor-link" href="#When-explain-will-work?%F0%9F%A4%94">&#182;</a></h1>
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+
 </div>
 </div><div class="fragment">
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
@@ -14402,37 +14443,22 @@ div.jp-OutputPrompt {
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 
-<pre><code>- Tells you why a particular optimization is not used.
-- Explain how to rewrite your queries.</code></pre>
+<pre><code>- Doesn't tells you why a particular optimization is not used.
+- Doesn't tells you how to rewrite your queries.</code></pre>
 
 </div>
-</div></div></section><section>
+</div></div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Performance-Optimization-Example-%F0%9F%90%86">Performance Optimization Example &#128006;<a class="anchor-link" href="#Performance-Optimization-Example-%F0%9F%90%86">&#182;</a></h1>
+<h1 id="Example:-Performance-Optimization%F0%9F%90%86">Example: Performance Optimization&#128006;<a class="anchor-link" href="#Example:-Performance-Optimization%F0%9F%90%86">&#182;</a></h1>
 </div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-
-</div>
-</div>
+</div><div class="fragment">
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <div class="highlight"><pre><span></span><span class="k">EXPLAIN</span> <span class="k">ANALYZE</span>
 <span class="k">SELECT</span> <span class="n">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">users</span> <span class="k">WHERE</span> <span class="n">twitter</span> <span class="o">!=</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>
 </pre></div>
-
-</div>
-</div><div class="fragment">
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><img src="basic_execution_before_index.png" alt=""></p>
-
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 
 </div>
 </div></div><div class="fragment">
@@ -14440,8 +14466,16 @@ div.jp-OutputPrompt {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <ul>
 <li>We perform a <a href="https://www.pgmustard.com/docs/explain/sequential-scan">sequential scan</a> on the users table.</li>
-<li>The scan filters out 2,487,813 rows using a Filter.</li>
+<li>The scan filters out 2,487,813 rows.</li>
 <li>It takes us 1.27 seconds to do all of this.</li>
+</ul>
+
+</div>
+</div></div><div class="fragment">
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
+<li><strong>Pro Tip</strong>💃: Focus on the node on the "worst" node.</li>
 </ul>
 
 </div>
@@ -14456,11 +14490,6 @@ div.jp-OutputPrompt {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <div class="highlight"><pre><span></span><span class="k">CREATE</span> <span class="k">INDEX</span> <span class="n">twitter_test</span> <span class="k">ON</span> <span class="n">users</span> <span class="p">(</span><span class="n">twitter</span><span class="p">)</span>
 </pre></div>
-
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><img src="basic_execution_with_index.png" alt=""></p>
 
 </div>
@@ -14470,8 +14499,7 @@ div.jp-OutputPrompt {
 <ul>
 <li>We perform an <a href="https://www.pgmustard.com/docs/explain/index-only-scan">index only scan</a> on the users table.</li>
 <li>It takes us 0.29 seconds instead of 1.27 seconds.</li>
-<li>We can create a more concise index using partial indices.</li>
-<li>We could use buffers to be more precise (but we want to keep it simple).</li>
+<li>We could use buffers to be more precise.</li>
 </ul>
 
 </div>
@@ -14487,9 +14515,41 @@ div.jp-OutputPrompt {
 </div></div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Good-optimization-options-%F0%9F%A4%9E%F0%9F%8F%BB">Good optimization options &#129310;&#127995;<a class="anchor-link" href="#Good-optimization-options-%F0%9F%A4%9E%F0%9F%8F%BB">&#182;</a></h1>
+<div class="highlight"><pre><span></span><span class="k">EXPLAIN</span> <span class="p">(</span><span class="k">ANALYZE</span><span class="p">,</span> <span class="n">BUFFERS</span><span class="p">)</span>
+<span class="k">SELECT</span> <span class="n">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">users</span> <span class="k">WHERE</span> <span class="n">twitter</span> <span class="o">!=</span> <span class="s1">&#39;&#39;</span>
+</pre></div>
+<p><img src="basic_execution_with_index_with_buffers.png" alt=""></p>
+
+</div>
+</div><div class="fragment">
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
+<li>The scan filters out 2,487,813 rows.</li>
+<li>We have 51,854 pages to read all from cache (400 MB).</li>
+<li>We have written 19 pages to disk.</li>
+</ul>
+
+</div>
+</div></div><div class="fragment">
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
+<li><strong>Pro Tip</strong>💃: there is no free lunch.</li>
+</ul>
+
+</div>
+</div></div></section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="Good-optimization-options%F0%9F%A4%9E%F0%9F%8F%BB">Good optimization options&#129310;&#127995;<a class="anchor-link" href="#Good-optimization-options%F0%9F%A4%9E%F0%9F%8F%BB">&#182;</a></h1>
 </div>
 </div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+
+</div>
+</div><div class="fragment">
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <ul>
@@ -14497,8 +14557,7 @@ div.jp-OutputPrompt {
 <li>Picking the right join method.</li>
 <li>Picking the right join order.</li>
 <li>Push Filters as soon as possible.</li>
-<li>Reducing disk IO operations when needed.</li>
-<li>Less is More</li>
+<li>Reducing disk IO operations when needed.    </li>
 </ul>
 
 </div>
@@ -14507,35 +14566,34 @@ div.jp-OutputPrompt {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 
 </div>
-</div><div class="fragment">
+</div></div><div class="fragment">
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <ul>
 <li><strong>Pro Tip</strong>💃: can enable/disable settings to check optimizations.</li>
 </ul>
-
-</div>
-</div></div></section><section>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Empty-Results-Example-%F0%9F%90%9B">Empty Results Example &#128027;<a class="anchor-link" href="#Empty-Results-Example-%F0%9F%90%9B">&#182;</a></h1>
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<div class="highlight"><pre><span></span><span class="k">EXPLAIN</span> <span class="k">ANALYZE</span>
-<span class="k">SELECT</span> <span class="n">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">users</span> <span class="k">WHERE</span> <span class="n">twitter</span> <span class="o">=</span> <span class="s1">&#39;d0n@ldtrump&#39;</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><span class="k">SET</span> <span class="n">enable_seqscan</span> <span class="k">TO</span> <span class="k">off</span><span class="p">;</span>
+<span class="k">EXPLAIN</span> <span class="p">(</span><span class="k">ANALYZE</span><span class="p">)</span> <span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">foo</span> <span class="k">WHERE</span> <span class="n">c1</span> <span class="o">&gt;</span> <span class="mi">500</span><span class="p">;</span>
+<span class="k">SET</span> <span class="n">enable_seqscan</span> <span class="k">TO</span> <span class="k">on</span><span class="p">;</span>
 </pre></div>
+
+</div>
+</div></div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="Example:-Empty-Results%F0%9F%90%9B">Example: Empty Results&#128027;<a class="anchor-link" href="#Example:-Empty-Results%F0%9F%90%9B">&#182;</a></h1>
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 
 </div>
 </div><div class="fragment">
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<div class="highlight"><pre><span></span><span class="k">EXPLAIN</span> <span class="k">ANALYZE</span>
+<span class="k">SELECT</span> <span class="n">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">users</span> <span class="k">WHERE</span> <span class="n">twitter</span> <span class="o">=</span> <span class="s1">&#39;d0n@ldtrump&#39;</span><span class="p">;</span>
+</pre></div>
 <p><img src="empty_execution_plan_broken.png" alt=""></p>
 
 </div>
@@ -14565,11 +14623,6 @@ div.jp-OutputPrompt {
 <div class="highlight"><pre><span></span><span class="k">EXPLAIN</span> <span class="k">ANALYZE</span>
 <span class="k">SELECT</span> <span class="n">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">users</span> <span class="k">WHERE</span> <span class="n">twitter</span> <span class="o">=</span> <span class="s1">&#39;donaldtrump&#39;</span><span class="p">;</span>
 </pre></div>
-
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><img src="empty_execution_plan_fixed.png" alt=""></p>
 
 </div>
@@ -14585,7 +14638,7 @@ div.jp-OutputPrompt {
 </div></div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Aren't-there-easier-ways?!-%F0%9F%99%8F">Aren't there easier ways?! &#128591;<a class="anchor-link" href="#Aren't-there-easier-ways?!-%F0%9F%99%8F">&#182;</a></h1>
+<h1 id="Aren't-there-easier-ways?!%F0%9F%99%8F">Aren't there easier ways?!&#128591;<a class="anchor-link" href="#Aren't-there-easier-ways?!%F0%9F%99%8F">&#182;</a></h1>
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
@@ -14599,25 +14652,26 @@ div.jp-OutputPrompt {
 <li>UI can be nice.</li>
 <li>Hints how to rewrite your queries. </li>
 <li>Hints why a particular optimization is not used. </li>
+<li>Hints why/where a particular issue orinated.</li>
 </ul>
 
 </div>
-</div></div><div class="fragment">
+</div></div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <ul>
-<li>Some awesome tools for single query performance optimizations like:<ul>
-<li><a href="https://explain.depesz.com/">explain.depesz.com</a></li>
-<li><a href="https://github.com/dalibo/pev2">pev2</a></li>
-<li><a href="https://github.com/mgartner/pg_flame">pg_flame</a></li>
-<li><a href="https://www.pgmustard.com/">pgMustard</a></li>
-<li><a href="https://github.com/eyaltrabelsi/query-flow">QueryFlow</a></li>
-</ul>
-</li>
+<li>Basic tools to understand execution plans like <a href="https://www.pgadmin.org/">pgAdmin</a>.</li>
+<li>Cooler tools to understand execution plans out there like <a href="https://github.com/dalibo/pev2">pev2</a>, <a href="explain.depesz.com">explain.depesz.com</a>,  <a href="https://www.eversql.com/">eversql</a>, <a href="https://www.pgmustard.com/">pgMustard</a> and  <a href="https://github.com/eyaltrabelsi/query-flow">QueryFlow</a></li>
+<li>Other tools like <a href="https://www.postgresql.org/docs/current/auto-explain.html">auto_explain</a> and <a href="https://github.com/2ndQuadrant/pg_stat_plans">pg_stat_plans</a> to record the execution plans.    </li>
 </ul>
 
 </div>
-</div></div><div class="fragment">
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+
+</div>
+</div><div class="fragment">
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <ul>
@@ -14636,43 +14690,17 @@ div.jp-OutputPrompt {
 <p><img src="pev2.png" alt=""></p>
 
 </div>
-</div><div class="fragment">
+</div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 
 <pre><code>+ Mature
-+ UI indicates the proportions of metrics.
-+ UI indicates 'problematic' operations.
-+ Aimed for all database users.
-- Support only Postgresql.
-- Support only a single query and limited options on multiple metrics.</code></pre>
++ Not opinionated.
++ UI indicates the proportions of metrics and problematic operations.
+- Focus on single query/metric for Postgresql.</code></pre>
 
 </div>
-</div></div></section><section>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="explain.depesz.com"><a href="https://explain.depesz.com/">explain.depesz.com</a><a class="anchor-link" href="#explain.depesz.com">&#182;</a></h2>
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><img src="depesz.png" alt=""></p>
-
-</div>
-</div><div class="fragment">
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-
-<pre><code>+ Mature
-+ Operations are linkable with examples.
-+ UI indicates 'problematic' operations.
-+ Aimed for all database users.
-- Support only Postgresql.
-- UI indicates the proportions of metrics.
-- Support only a single query and limited options on multiple metrics.</code></pre>
-
-</div>
-</div></div></section><section>
+</div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="QueryFlow"><a href="https://github.com/eyaltrabelsi/query-flow">QueryFlow</a><a class="anchor-link" href="#QueryFlow">&#182;</a></h2>
@@ -14680,19 +14708,28 @@ div.jp-OutputPrompt {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><img src='queryflow_example.png'></p>
+<p><img src='duration.png'></p>
+
+</div>
+</div></section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><img src='missing_records.png'></p>
+
+</div>
+</div></section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><img src='stale_statistics.png'></p>
 
 </div>
 </div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 
-<pre><code>+ Support several engines.
+<pre><code>+ Support multiple metrics/queries/engines.
 + Operations are linkable with examples.
-+ UI indicates 'problematic' operations.
-+ UI indicates the proportions of metrics.
-+ Support multiple metrics and multiple queries.
-+ Aimed for all database users, including the vendors.
++ UI indicates the proportions of metrics and problematic operations.
 - Not mature
 - Very opinionated.
 - Require installations*.</code></pre>
@@ -14701,7 +14738,7 @@ div.jp-OutputPrompt {
 </div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Optimistic-Future-%F0%9F%94%AE">Optimistic Future &#128302;<a class="anchor-link" href="#Optimistic-Future-%F0%9F%94%AE">&#182;</a></h1>
+<h1 id="Optimistic-Future%F0%9F%94%AE">Optimistic Future&#128302;<a class="anchor-link" href="#Optimistic-Future%F0%9F%94%AE">&#182;</a></h1>
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
@@ -14712,8 +14749,8 @@ div.jp-OutputPrompt {
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <ul>
-<li>Easy and intuitive as opening files in python (googling).</li>
-<li>Interactive feeling with functionalities like zoom, search, and suggestions.</li>
+<li>Integrated in IDEs, clients, saas and so on.</li>
+<li>Easy and intuitive as opening files in python/js (googling).</li>
 <li>Proactive // Reactive.</li>
 </ul>
 
@@ -14726,15 +14763,18 @@ div.jp-OutputPrompt {
 </div></div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><img src="https://memegenerator.net/img/instances/63439861.jpg" alt=""></p>
+<p><img src="https://i.pinimg.com/originals/b9/0a/79/b90a79b4c361d079144597d0bcdd61de.jpg" alt=""></p>
 
 </div>
 </div><aside class="notes">
 
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><a href="https://www.youtube.com/watch?v=Ls-uE1V31lE&amp;list=WL&amp;index=5&amp;ab_channel=PostgresConference">video 1</a>
-<a href="https://www.youtube.com/watch?v=mCwwFAl1pBU&amp;ab_channel=SouthernCaliforniaLinuxExpo">video 2</a></p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=Ls-uE1V31lE&amp;list=WL&amp;index=5&amp;ab_channel=PostgresConference">Deeper Understanding of PostgreSQL Execution Plan (video)</a></li>
+<li><a href="https://www.youtube.com/watch?v=mCwwFAl1pBU&amp;ab_channel=SouthernCaliforniaLinuxExpo">EXPLAIN Explained (video)</a></li>
+<li><a href="https://public.dalibo.com/exports/conferences/_archives/_2012/201211_explain/understanding_explain.pdf">Understanding Explain</a></li>
+</ul>
 
 </div>
 </div>
